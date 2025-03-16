@@ -1,0 +1,5 @@
+services:
+  thingamajig:
+    image: spp
+    build:
+      context: .

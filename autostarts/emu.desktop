@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+
+Name=skyemu
+Exec=/opt/silly/SkyEmu/build/bin/SkyEmu /opt/silly/illegal_rom/pokered.gbc
+
+NoDisplay=false
