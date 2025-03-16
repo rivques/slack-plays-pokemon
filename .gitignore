@@ -1,3 +1,7 @@
 illegal_rom
 !illegal_rom/.gitkeep
 .venv
+
+slackbot/node_modules
+slackbot/.env
+slackbot/SkyEmu.osx

@@ -16,3 +16,10 @@ RUN dnf install -y obs
 
 COPY illegal_rom illegal_rom
 COPY autostarts/* /etc/xdg/autostart/
+
+ARG BUN_INSTALL=/opt/silly/bun
+RUN curl -fsSL https://bun.sh/install | bash
+COPY slackbot slackbot
+
+WORKDIR /opt/silly/slackbot
+ENTRYPOINT ["/opt/silly/bun/bin/bun", "run", "bot.js"]
