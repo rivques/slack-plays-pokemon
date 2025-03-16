@@ -13,9 +13,13 @@ COPY skyemu skyemu
 RUN skyemu/build-skyemu.sh
 
 RUN dnf install -y obs
+COPY slack.rpm slack.rpm
+RUN dnf install -y slack.rpm
 
 COPY illegal_rom illegal_rom
+RUN chmod +x illegal_rom/*
 COPY autostarts/* /etc/xdg/autostart/
+RUN chmod +x /etc/xdg/autostart/*
 
 ARG BUN_INSTALL=/opt/silly/bun
 RUN curl -fsSL https://bun.sh/install | bash
