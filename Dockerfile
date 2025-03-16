@@ -23,4 +23,3 @@ COPY slackbot slackbot
 
 WORKDIR /opt/silly/slackbot
 RUN /opt/silly/bun/bin/bun i
-ENTRYPOINT ["/opt/silly/bun/bin/bun", "run", "bot.js"]

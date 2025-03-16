@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+
+Name=slackbot
+Exec=/opt/silly/bun/bin/bun run /opt/silly/slackbot/bot.js
+Path=/opt/silly/slackbot
+Terminal=true
+NoDisplay=false
